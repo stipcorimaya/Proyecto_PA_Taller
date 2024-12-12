@@ -2,14 +2,14 @@
 #define HERRYREPARACIONDEFRENOS_H
 
 #include "ServicioDelTaller.h"
+#include "herramientas.h"
 
 using namespace std;
 
 class HerrYReparacionDeFrenos{
 	private:
-		int cantLlave;
-		int cantDestornill;
 		servicioDelTaller *servicioTaller;
+		
 	public:
 		HerrYReparacionDeFrenos(int, int);
 		void AnadirTiempoCosto(servicioDelTaller *);

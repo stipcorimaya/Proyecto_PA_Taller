@@ -3,6 +3,7 @@
 
 #include <string>
 
+
 using namespace std;
 
 class servicioDelTaller{
@@ -14,7 +15,8 @@ class servicioDelTaller{
 	public:
 		servicioDelTaller(double, double,string, int);
 		void MostrarHist();
-		
+		double mostrarCostos();
+		double mostrarTiempos();
 };
 
 #endif

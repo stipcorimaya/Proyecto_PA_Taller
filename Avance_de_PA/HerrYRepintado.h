@@ -8,14 +8,11 @@ using namespace std;
 
 class HerrYRepintado{
 	private:
-		int DisciDeLijados;
 		string ColorElegido;
 		servicioDelTaller *servicioTaller;
 	public:
 		void AnadirTiempoCosto(servicioDelTaller *);
-		void despintar();
-		void pintar();
-		void reponerHerram();
+		HerrYRepintado(int);
 };
 
 #endif

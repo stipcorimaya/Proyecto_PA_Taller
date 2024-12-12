@@ -17,9 +17,34 @@ servicioDelTaller :: servicioDelTaller ( double cost, double tiemp, string, int 
 			numServicio = num;
 			cout << "Proceso completado ";
 			archivo << TipoServicio << "    " << Costo << "    " << Tiempo << "    " << numServicio;
-			break;
+		break;
+		case 2:
+			TipoServicio = "Repintado";
+			Costo = cost + 14.50;
+			Tiempo = tiemp + 5;
+			numServicio = num;
+			cout << "Proceso completado ";
+			archivo << TipoServicio << "    " << Costo << "    " << Tiempo << "    " << numServicio;
+		break;
+		case 3:
+			TipoServicio = "Cambio de Neumatico";
+			Costo = cost + 28.00;
+			Tiempo = tiemp + 4;
+			numServicio = num;
+			cout << "Proceso completado ";
+			archivo << TipoServicio << "    " << Costo << "    " << Tiempo << "    " << numServicio;
+		break;
+		case 4:
+			TipoServicio = "Cambio de aceite o filtro";
+			Costo = cost + 10.50;
+			Tiempo = tiemp + 10;
+			numServicio = num;
+			cout << "Proceso completado ";
+			archivo << TipoServicio << "    " << Costo << "    " << Tiempo << "    " << numServicio;
+		break;
 		default:
 			cout << "ERRROR !!!" << endl;
+		break;
 	}
 }
 
@@ -33,4 +58,12 @@ void servicioDelTaller :: MostrarHist (){
 
 	cout  << "Servicio : "<< numServicio << "  "<< TipoServicio << "  "<< Costo << "  "<< Tiempo << endl;
 	}
+}
+
+double servicioDelTaller :: mostrarCostos(){
+	return Costo;
+}
+
+double servicioDelTaller :: mostrarTiempos(){
+	return Tiempo;
 }

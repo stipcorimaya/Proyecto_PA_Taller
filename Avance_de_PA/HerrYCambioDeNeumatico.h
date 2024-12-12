@@ -11,7 +11,7 @@ class HerrYCambioDeNeumatico{
 		servicioDelTaller *servicioTaller;
 	public:
 		void AnadirTiempoCosto(servicioDelTaller *);
-		void reponerHerram();
+		HerrYCambioDeNeumatico(int);
 };
 
 #endif

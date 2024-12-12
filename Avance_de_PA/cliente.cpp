@@ -10,7 +10,7 @@ using namespace std;
 void cliente :: Cliente (){
 	char aux;
 	ofstream archivo;
-	
+	cin.get(aux);
 	archivo.open("Registro de clientes.txt"); // Apertura (creacion)
 	cout << "Nombre :" ;
 	getline(cin, nombreClient);
@@ -55,10 +55,20 @@ void cliente :: MostrarClient(){
 	archivo >>  nombreClient; // Primer nombre
 	//while (nombreClient != "x"){
 		contador ++;
-		cout<< "Cliente "<< contador << ": " << endl;
-		cout<< nombreClient <<"  "<< DNI << "  "<< correo << "  "<< direccion<< endl;
-		cout<< "Datos del vehiculo:"<< endl;
-		cout<< marcaVeh <<"  "<< tipoVeh<< "  "<< placaVeh<<"  "<< tipoMotor<< endl;
+		cout << "\n------------------------ Cliente " << contador << " ------------------------" << endl;
+	    cout << left;
+	    cout << setw(20) << "Nombre: " << nombreClient << endl;
+	    cout << setw(20) << "DNI: " << DNI << endl;
+	    cout << setw(20) << "Correo: " << correo << endl;
+	    cout << setw(20) << "Direccion: " << direccion << endl;
+	    
+	    cout << "\n---------------------- Datos del Vehículo ----------------------" << endl;
+	    cout << setw(20) << "Marca: " << marcaVeh << endl;
+	    cout << setw(20) << "Tipo: " << tipoVeh << endl;
+	    cout << setw(20) << "Placa: " << placaVeh << endl;
+	    cout << setw(20) << "Tipo de Motor: " << tipoMotor << endl;
+	
+	    cout << "---------------------------------------------------------------" << endl;
 		archivo >> nombreClient; // Siguiente nombre
 		//}
 		archivo.close(); // Cierre

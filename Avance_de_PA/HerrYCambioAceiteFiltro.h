@@ -6,13 +6,10 @@
 
 class HerrYCambioAceiteFiltro{
 	private:
-		double cantAceite;
-		int cantLlaveDeAceite;
 		servicioDelTaller *servicioTaller;
 	public:
 		void AnadirTiempoCosto(servicioDelTaller *);
-		void RealizarReparacion();
-		void reponerHerram(); 
+		HerrYCambioAceiteFiltro(int);
 };
 
 #endif
