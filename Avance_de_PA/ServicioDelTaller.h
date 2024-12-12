@@ -12,7 +12,7 @@ class servicioDelTaller{
 		string TipoServicio;
 		int numServicio;
 	public:
-		servicioDelTaller(double, double, int);
+		servicioDelTaller(double, double,string, int);
 		void MostrarHist();
 		
 };

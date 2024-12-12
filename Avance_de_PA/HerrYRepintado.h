@@ -10,6 +10,7 @@ class HerrYRepintado{
 	private:
 		int DisciDeLijados;
 		string ColorElegido;
+		servicioDelTaller *servicioTaller;
 	public:
 		void AnadirTiempoCosto(servicioDelTaller *);
 		void despintar();

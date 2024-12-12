@@ -4,8 +4,8 @@
 CPP      = g++.exe -D__DEBUG__
 CC       = gcc.exe -D__DEBUG__
 WINDRES  = windres.exe
-OBJ      = cliente.o main.o ServicioDelTaller.o HerrYReparacionDeFrenos.o HerrYRepintado.o
-LINKOBJ  = cliente.o main.o ServicioDelTaller.o HerrYReparacionDeFrenos.o HerrYRepintado.o
+OBJ      = cliente.o main.o ServicioDelTaller.o HerrYReparacionDeFrenos.o HerrYRepintado.o HerrYCambioDeNeumatico.o HerrYCambioAceiteFiltro.o
+LINKOBJ  = cliente.o main.o ServicioDelTaller.o HerrYReparacionDeFrenos.o HerrYRepintado.o HerrYCambioDeNeumatico.o HerrYCambioAceiteFiltro.o
 LIBS     = -L"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib" -L"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/lib" -static-libgcc -g3
 INCS     = -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include"
 CXXINCS  = -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include" -I"C:/Program Files (x86)/Embarcadero/Dev-Cpp/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/9.2.0/include/c++"
@@ -38,3 +38,9 @@ HerrYReparacionDeFrenos.o: HerrYReparacionDeFrenos.cpp
 
 HerrYRepintado.o: HerrYRepintado.cpp
 	$(CPP) -c HerrYRepintado.cpp -o HerrYRepintado.o $(CXXFLAGS)
+
+HerrYCambioDeNeumatico.o: HerrYCambioDeNeumatico.cpp
+	$(CPP) -c HerrYCambioDeNeumatico.cpp -o HerrYCambioDeNeumatico.o $(CXXFLAGS)
+
+HerrYCambioAceiteFiltro.o: HerrYCambioAceiteFiltro.cpp
+	$(CPP) -c HerrYCambioAceiteFiltro.cpp -o HerrYCambioAceiteFiltro.o $(CXXFLAGS)
