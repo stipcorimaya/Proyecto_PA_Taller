@@ -3,8 +3,10 @@
 
 #include <string>
 
+using namespace std;
+//string, string, string, string, string, string, string, string
 class cliente{
-	protected:
+	private:
 		string nombreClient;
 		string DNI;
 		string marcaVeh;
@@ -13,8 +15,9 @@ class cliente{
 		string tipoMotor;
 		string correo;
 		string direccion;
-	private:
-		AnadirClient(string, string, string, string, string, string, string, string);
+		string colorVeh;
+	public:
+		void Cliente();
 		void MostrarClient();
 };
 
